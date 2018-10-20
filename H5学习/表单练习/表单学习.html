@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<form action="http://www.baidu.com">
+    <fieldset>
+        <legend>模仿注册界面</legend>
+    <p><label for="account">昵称：</label><input type="text" name="a" id="account"></p>
+    <p><label for="password">密码：</label><input type="password" name="b" id="password"></p>
+    <p>性别：<input type="radio" name="gender" value="male" id="male" ><label for="male">男</label>
+    <input type="radio" name="gender" value="female" id="female"><label for="female">女</label>
+    <input type="radio" name="gender" value="unknow" checked id="unknow" ><label for="unknow">保密</label></p>
+    <p><label for="ins">个性签名：</label><textarea id="ins"></textarea></p>
+    <p><label for="email">邮箱：</label><input type="email" id="email"></p>
+    <p><label for="url">您的个人主页：</label><input type="url"id="url"></p>
+    <p><label for="date">生日：</label><input type="date" id="date"></p>
+    <p><label for="location">所在地：</label><select id="location"></p>
+        <optgroup label="海口市">
+            <option>秀英</option>
+            <option>龙华</option>
+            <option>琼山</option>
+            <option>美兰</option>
+        </optgroup>
+        <optgroup label="三亚市">
+            <option selected>吉阳区</option>
+            <option>天涯区</option>
+            <option>海棠区</option>
+            <option>崖州区</option>
+        </optgroup>
+    </select><br>
+    <p><input type="checkbox"name="ty" value="agreement">我已阅读相关条款<br></p>
+   <p> <input type="checkbox" name="ty" value="sure" checked>我坚持要注册这个没有美工制作的网页</p>
+    <input type="image" src="images/register.jpg"onclick="alert('对不起，人太丑，无法注册')">
+    <input type="reset" value="一键清空">
+    <input type="submit">
+    <input type="hidden" name="优秀" value="隐藏域值">
+    </fieldset>
+</form>
+<hr>
+<h1>Datalist标签的了解</h1>
+请输入你的年龄：<input type="text" list="age">
+<datalist id="age">
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+</datalist>
+</body>
+</html>
