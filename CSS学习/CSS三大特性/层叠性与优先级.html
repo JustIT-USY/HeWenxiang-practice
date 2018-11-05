@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*p{color:red;
+        }
+        p{
+            color: blue;
+        }*/
+        /*li{
+            color:blue;
+        }
+        ul {
+            color: red;
+            }
+        *{
+            color:green !important;
+        }
+        p{
+            color:yellow;
+        }
+        .c1{
+            color:pink;
+        }
+        #p1{
+            color:gray;
+        }*/
+        #d1 ul li #p1{
+            color:blue;
+        }
+        #d1 ul li .c1{
+            color:red;
+        }
+        #d1 ul li #p1{
+            color:green;
+        }
+        .c2 ul li .c1{
+            color:yellow;}
+    </style>
+</head>
+<body>
+<div id="d1" class="c2">
+    <ul>
+        <li>
+            <p id="p1" class="c1">我是ul>li标签下的P标签</p>
+        </li>
+    </ul>
+    <!--<h1>h1标签</h1>-->
+</div>
+</body>
+</html>
