@@ -67,6 +67,8 @@ img{
     background: url("../images/icon.png") no-repeat -24px -790px;
     display: inline;
     margin: 5px;
+
+    text-indent: 20em;
 }
 
 .current{
