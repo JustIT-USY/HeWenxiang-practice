@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+        }
+        .box2{
+            background-color: green;
+        }
+        .box1 p{
+            width: 100px;
+            background-color: blue;
+        }
+        .box2 p{
+            width: 100px;
+            background-color: yellow;
+        }
+        p{
+            float: left;
+        }
+        .box1::after{
+            content: '';
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <p>我是文字1</p>
+    <p>我是文字2</p>
+    <p>我是文字3</p>
+</div>
+<div class="box2">
+    <p>我是文字4</p>
+    <p>我是文字5</p>
+    <p>我是文字6</p>
+</div>
+</body>
+</html>

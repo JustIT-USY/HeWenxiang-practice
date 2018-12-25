@@ -7,6 +7,9 @@ a{
     text-decoration: none;
     color:black;
 }
+body{
+    background-color:yellow;
+}
 #tab{
     width: 498px;
     height: 120px;
@@ -15,16 +18,16 @@ a{
     /*overflow: hidden;*/
 }
 #tab_header{
-    background-color: #e8e8e8;
+    background-color: rgba(47, 223, 227, 0.2);
     height: 28px;
     line-height: 28px;
-
+    border-bottom: 1px solid orangered;
 }
 #tab_header ul{
     width: 500px;
-    /*display: flex;
-    justify-content: space-around;
-    align-items: center;*/
+    /*display: none;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
 }
 #tab_header ul li{
     width: 98px;
@@ -56,7 +59,7 @@ a{
 
 /*内容区域*/
 #tab_content{
-
+    opacity:1;
 }
 #tab_content .dom{
     padding-top: 20px;

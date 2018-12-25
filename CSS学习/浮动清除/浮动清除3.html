@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            margin-bottom: 100px;
+        }
+        .box2{
+            background-color: green;
+            /*margin-top: 100px;*/
+        }
+        .box1 p{
+            width: 100px;
+            background-color: blue;
+        }
+        .box2 p{
+            width: 100px;
+            background-color: yellow;
+        }
+        p{
+            float: left;
+        }
+        .box3{
+            clear: both;
+            /*height: 20px;*/
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <p>我是文字1</p>
+    <p>我是文字2</p>
+    <p>我是文字3</p>
+    <div class="box3"></div>
+</div>
+<!--外墙法：两个盒子之间添加一个div盒子-->
+<!--<div class="box3"></div>-->
+<div class="box2">
+    <p>我是文字4</p>
+    <p>我是文字5</p>
+    <p>我是文字6</p>
+</div>
+</body>
+</html>

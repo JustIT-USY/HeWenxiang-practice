@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--overflow的作用演示-->
+    <!--<style>-->
+        <!--*{-->
+            <!--margin: 0;-->
+            <!--padding: 0;-->
+        <!--}-->
+        <!--div{-->
+            <!--width: 200px;-->
+            <!--height: 500px;-->
+            <!--background-color:red;-->
+            <!--overflow: hidden;-->
+        <!--}-->
+    <!--</style>-->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        <!--如何使用overflow进行清除浮动-->
+        <!--.box1{
+            overflow: hidden;
+        }
+        .box2{
+            background-color: green;
+        }
+        .box1 p{
+            width: 100px;
+            background-color: blue;
+        }
+        .box2 p{
+            width: 100px;
+            background-color: yellow;
+        }
+        p{
+            float: left;
+        }-->
+
+        /*如果我想要实现，外面大盒子不往下移动，又想里面的小盒子设置margin怎么做？*/
+
+        .b1{
+            width: 500px;
+            height: 500px;
+            background-color:red;
+            overflow: hidden;
+        }
+        .b2{
+            width: 250px;
+            height: 250px;
+            background-color:yellow;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+<!--<div>-->
+    <!--我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字我是div中的文字-->
+<!--</div>-->
+
+<!--<div class="box1">-->
+    <!--<p>我是文字1</p>-->
+    <!--<p>我是文字2</p>-->
+    <!--<p>我是文字3</p>-->
+<!--</div>-->
+<!--<div class="box2">-->
+    <!--<p>我是文字4</p>-->
+    <!--<p>我是文字5</p>-->
+    <!--<p>我是文字6</p>-->
+
+
+<!--</div>-->
+
+<div class="b1">
+    <div class="b2">注意看外面大盒子有没有被顶下来</div>
+</div>
+</body>
+</html>
