@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焦点图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 520px;
+            height: 280px;
+            height: 280px;
+            border: 2px solid gold;
+            margin: 0 auto;
+            margin-top: 100px;
+            position:relative;
+        }
+        div span{
+            display: inline-block;
+            width: 40px;
+            /*height: 80px;*/
+            /*有行高撑起，就不需要设置高度了*/
+            background-color:rgba(0,0,0,0.3);
+            font-size:50px;
+            text-align:center;
+            line-height:80px;
+            color:white;
+            position:absolute;
+        }
+        div .leftArrow{
+            top: 100px;
+        }
+        div .rightArrow{
+            top: 100px;
+            left:480px;
+        }
+        ol{
+            list-style:none;
+            width:200px;
+            height:40px;
+            background-color:rgba(255,255,255,0.7);
+            position:absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        ol li{
+            float:left;
+            width:40px;
+            line-height:40px;
+            text-align:center;
+            border:1px solid gold;
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="img/ad.jpg" alt="">
+    <span class="leftArrow">&lt;</span>
+    <span class="rightArrow">&gt;</span>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+</div>
+</body>
+</html>

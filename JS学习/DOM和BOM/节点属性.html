@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <p id="word">哈哈哈</p>
+    <button id="btn">点我</button>
+    <img src="img/img2.jpg" alt="嘤嘤嘤，图片丢失了">
+</div>
+<script>
+    window.onload = function () {
+        // 节点属性（节点.属性）
+        var img = document.getElementsByTagName("img")[0];
+        // 1. 获取
+        console.log(img.getAttribute("src"));//上面img标签里面是什么就获取的是什么
+        console.log(img.src);//获取的是运行的结果
+        console.log(img.getAttribute("alt"));
+        console.log(img.alt);
+        // 2. 设置
+        img.setAttribute("src", "img/img2.jpg");
+        img.setAttribute("alt", "图片");
+        img.setAttribute("a", "秀啊");
+        img.setAttribute("b", "nice");
+        //console.log(img.aaaa);//非自带的属性（即自己添加的）不能使用这种方法
+        console.log(img.getAttribute("a"));
+        // 3. 删除
+        img.removeAttribute("src");
+        img.removeAttribute("a");
+        img.removeAttribute("b");
+    }
+</script>
+</body>
+</html>

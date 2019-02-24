@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    //从键盘输入3个整数, 找到最大值并输出?
+    //自己理解写的
+    var one , two , three;
+    one = Number(prompt('请输入你的第一个要比较的数字'));
+    two = Number(prompt('请输入你的第二个数字'));
+    three = Number(prompt('请输入最后一个数字'));
+    console.log(one);
+    console.log(two);
+    console.log(three);
+    var max = 0;
+    one>two?max = one : max = two;
+    max>three?max = max : max = three;
+    console.log(max);
+</script>
+<script>
+    //答案优化后的代码
+    var one,two,thre,max;
+    one = Number(prompt('请输入你的第一个要比较的数字'));
+    two = Number(prompt('请输入你的第二个数字'));
+    three = Number(prompt('请输入最后一个数字'));
+    console.log(one);
+    console.log(two);
+    console.log(three);
+    max = one>two?one :two;
+    max = max>three?max : three;
+    console.log(max);
+</script>
+</body>
+</html>

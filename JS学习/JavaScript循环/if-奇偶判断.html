@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    //我的想法
+    var num;
+    num = Number(window.prompt('请输入一个整数'));
+    if(isNaN(num)){
+        alert('输入有误');
+    }else{
+        if(num % 2 == 0){
+            alert('是偶数');
+        }else{
+            alert('是奇数');
+        }
+    }
+</script>
+<script>
+    //PLUS写法--三目运算
+    var temp;
+    temp = +(window.prompt('请输入一个整数'));
+    if(isNaN(temp)){
+    alert('输入有误');
+    }else{
+        (temp % 2 == 0)? alert('偶数'):alert('奇数');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 690px;
+            height: 190px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            background-image: url("img/bg-plane.png"),url("img/bg-sun.png"),url("img/bg-clouds.png");
+            background-repeat: no-repeat;
+            background-size:50px 50px,50px 50px,auto;
+            background-position: 50px 150px,300px 20px,0 0;
+            animation: sport 5s linear 0s infinite normal;
+        }
+        @keyframes sport {
+            from{
+                background-position: 50px 150px,300px 20px,0 0;
+            }
+            to{
+                background-position: 600px 20px,300px 20px,-900px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person() {
+        var per = new Object();//1.在内部产生一个对象
+        //添加属性
+        per.name = null;
+        per.age = null;
+        per.sex = null;
+
+        //添加方法
+        per.study = function () {
+            console.log(this.name + "在学习");
+        }
+
+        per.sleep = function () {
+            console.log(this.name + "在睡觉");
+        }
+        return per;//2.并将产生的对象返回函数
+    }
+
+    var p = Person();//3.调用函数
+    p.name = "Tony";
+    p.age = 10;
+    p.sex = "male";
+    p.study();
+    console.log(p);
+
+    var p1 = Person();
+    p.name = "Lily";
+    p.age = 12;
+    p.sex = "female";
+    p.sleep();
+    console.log(p1);
+</script>
+</body>
+</html>

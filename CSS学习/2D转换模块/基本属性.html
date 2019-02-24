@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            background-color:yellow;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            margin: 0 auto;
+            background-color:skyblue;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        li:nth-child(2){
+            transform: rotate(60deg);
+        }
+        li:nth-child(3){
+            transform: translate(100px, 60px);
+        }
+        li:nth-child(4){
+            transform: scale(0.7, 1.5);
+        }
+        li:nth-child(5){
+            transform: rotate(60deg) translate(100px, 60px) scale(0.7, 1.5);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>正常的</li>
+    <li>旋转的</li>
+    <li>平移的</li>
+    <li>缩放的</li>
+    <li>综合的</li>
+</ul>
+</body>
+</html>

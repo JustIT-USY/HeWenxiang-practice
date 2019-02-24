@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .nav{
+            width: 400px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color:green;
+        }
+        .nav>li{
+            width: 120px;
+            height: 40px;
+            list-style: none;
+            float: left;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 40px;
+            background-color:yellow;
+            position: relative;
+        }
+        .sub{
+            width: 120px;
+        }
+        .sub li{
+            list-style: none;
+            background-color: #fff;
+            transform: rotateY(180deg);
+            transition:all 0.8s;
+            opacity: 0;
+        }
+        .nav>li:hover .sub li{
+            transform: none;
+            opacity: 1;
+        }
+        .nav>li:hover .sub li:nth-child(1){
+            transition-delay: 0ms;
+        }
+        .nav>li:hover .sub li:nth-child(2){
+            transition-delay: 200ms;
+        }
+        .nav>li:hover .sub li:nth-child(3){
+            transition-delay: 400ms;
+        }
+        .nav>li:hover .sub li:nth-child(4){
+            transition-delay: 600ms;
+        }
+        .nav>li:hover .sub li:nth-child(5){
+            transition-delay: 800ms;
+        }
+        .nav>li .sub li:nth-child(5){
+            transition-delay: 0ms;
+        }
+        .nav>li .sub li:nth-child(4){
+            transition-delay: 200ms;
+        }
+        .nav>li .sub li:nth-child(3){
+            transition-delay: 400ms;
+        }
+        .nav>li .sub li:nth-child(2){
+            transition-delay: 600ms;
+        }
+        .nav>li .sub li:nth-child(1){
+            transition-delay: 800ms;
+        }
+        div{
+            width: 400px;
+            height: 300px;
+            background-color:greenyellow;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li><p>一级菜单</p>
+        <ul class="sub">
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+        </ul>
+    </li>
+    <li><p>一级菜单</p>
+        <ul class="sub">
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+        </ul>
+    </li>
+    <li><p>一级菜单</p>
+        <ul class="sub">
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+            <li><a href="">二级菜单</a></li>
+        </ul>
+    </li>
+</ul>
+<div>腾讯网从2003年创立至今,已经成为集新闻信息,区域垂直生活服务、社会化媒体资讯和产品为一体的互联网媒体平台。腾讯网下设新闻、科技、财经、娱乐、体育、汽车、时尚...</div>
+</body>
+</html>

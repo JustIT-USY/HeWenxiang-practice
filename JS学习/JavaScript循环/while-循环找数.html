@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //获取1～100之间 7的倍数的个数并打印，并统计个数
+    var sum = 0, num = 1, str ='';
+    while (num <= 100){
+        if(num % 7 == 0){
+            sum = sum +1;
+            str = str + ' ' + String(num);
+        }
+        num++;
+    }
+    alert('一共有' + sum + '个，分别是:' + str );
+</script>
+</body>
+</html>

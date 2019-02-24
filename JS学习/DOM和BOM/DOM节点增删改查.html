@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2333</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <p id="word">66666</p>
+    <button>点啊</button>
+</div>
+<script>
+    window.onload = function () {
+        var box = document.getElementById("box");
+        // 1. 创建节点
+        var img = document.createElement("img");
+        img.src = "img/img1.jpg";
+        //1.2 插入节点
+        var btn = document.getElementsByTagName("button")[0];
+        box.insertBefore(img, btn);
+        // 2. 删除节点
+        var word = document.getElementById("word");
+        word.parentNode.removeChild(word);
+        //复制节点
+        var newTag = box.cloneNode(true);
+        document.body.appendChild(newTag);
+    };
+</script>
+</body>
+</html>

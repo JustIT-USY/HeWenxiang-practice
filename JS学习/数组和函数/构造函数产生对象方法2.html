@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1.构造个函数，这种方法更加清晰，不会有var per = new Object();中的Object();模糊概念
+    function Person(option) {
+        //1.1添加属性 可以直接写在.prototype中
+
+        /*this.name = option.name;
+        this.age = option.age;
+        this.sex = option.sex;*/
+        this._init(option);
+
+        //1.2添加方法：这种方法会使内存中产生的方法不是同一个，造成资源的浪费 console.log(p1.study === p2.study);结果为false。
+        /*this.study = function (somewhere) {
+            console.log(this.name + somewhere + "学习");
+        };
+        this.sleep = function (sometime) {
+            console.log(this.name + sometime + "睡觉");
+        };*/
+    };
+
+    //使用.prototype创建的方法，使产生对象的方法都是属于同一个，console.log(p1.study === p2.study);结果为true。
+    /*Person.prototype.study = function (somewhere) {
+        console.log(this.name + somewhere + "学习");
+    };
+    Person.prototype.sleep = function (sometime) {
+        console.log(this.name + sometime + "睡觉");
+    };
+    */
+
+    //创建方法的终极方案
+    Person.prototype = {
+        _init: function (option) {
+            this.name = option.name;
+            this.age = option.age;
+            this.sex = option.sex;
+        },
+        study: function (somewhere) {
+            console.log(this.name + somewhere + "学习");
+        },
+        sleep: function (sometime) {
+            console.log(this.name + sometime + "睡觉");
+        }
+    };
+
+    //创建对象
+    var p1 = new Person({name: "李华", age: "10", sex: "男"});
+    console.log(p1);
+    p1.study();
+    p1.sleep();
+
+    var p2 = new Person({name: "Kim", age: "19", sex: "女"});
+    console.log(p2);
+    p2.study();
+    p2.sleep();
+    console.log(p1.study === p2.study);//true
+</script>
+</body>
+</html>

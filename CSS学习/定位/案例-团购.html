@@ -14,6 +14,7 @@
             border: 2px solid #cccccc;
             margin: 0 auto;
             margin-top: 100px;
+            position: relative;
         }
         div img{
             width: 300px;
@@ -24,13 +25,30 @@
             height: 44px;
             background: url("img/tuangou.png") no-repeat 0px -280px;
             display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
         div .price{
             width: 134px;
             height: 42px;
             background:  url("img/tuangou.png")no-repeat 0 -362px;
             /*display: inline-block;*/
-            position: relative;
+            position: absolute;
+            left: -7px;
+            top: 163px;
+        }
+        div .count{
+            width: 60px;
+            height: 40px;
+            font-size: 30px;
+            color:red;
+            position: absolute;
+            top: 163px;
+            left:45px;
+        }
+        div .word{
+        font-size:24px;
         }
     </style>
 </head>
@@ -39,6 +57,8 @@
     <img src="img/meat.jpg" alt="">
     <span class="hot"></span>
     <span class="price"></span>
+    <span class="count">66</span>
+    <p class="word">新用户首次下单 最高立减30元 立即下载APP，享更多优惠吧!</p>
 </div>
 </body>
 </html>

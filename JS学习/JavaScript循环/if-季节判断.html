@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var month;
+    month = +(window.prompt('请输入你要判断的月份'));
+    if(isNaN(month)){
+        alert('输入月份有误');
+    }else {
+        if(month == 12 || month == 1 || month == 2){
+            alert('冬季');
+        }else if(month > 2 && month < 6 ){
+            alert('春季');
+        }else if(month <10){
+            alert('夏季');
+        }else {
+            alert('秋季');
+        }
+    }
+</script>
+</body>
+</html>

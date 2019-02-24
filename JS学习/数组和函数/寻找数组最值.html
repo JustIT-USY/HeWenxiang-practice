@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = [10, -40, 66, 250, 68];
+    var minValue = maxValue = arr[0];//最值
+    var minIndex = maxIndex = 0;//索引
+    for (var i = 1; i <= arr.length; i++) {
+        if (arr[i] > maxValue) {
+            maxValue = arr[i];
+            maxIndex = i;
+        }
+        if (arr[i] < minValue) {
+            minValue = arr[i];
+            minIndex = i;
+        }
+    }
+    console.log(maxValue);
+    console.log(maxIndex);
+    console.log(minValue);
+    console.log(minIndex);
+</script>
+</body>
+</html>

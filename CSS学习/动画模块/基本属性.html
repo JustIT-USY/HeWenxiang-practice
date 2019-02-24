@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .start{
+            width: 100px;
+            height: 50px;
+            background-color:yellow;
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 500px;
+            animation-name: db;
+            animation-duration:5s;
+        }
+        @keyframes db{
+            from{
+                margin-left: 50px;
+            }
+            to{
+                margin-left: 500px;
+            }
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color:blue;
+            margin-top: 100px;
+            margin-left: 100px;
+            color:white;
+            position: absolute;
+            animation-name: d1;
+            animation-duration:5s;
+            animation-delay0%{
+            transform: rotate(10deg);
+        }: 1s;
+            animation-fill-mode:both;
+        }
+        @keyframes d1{
+
+            50%{
+                transform: rotate(50deg);
+            }
+            100%{
+                transform: rotate(70deg);
+            }
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color:pink;
+            margin-left: 600px;
+            margin-top: 100px;
+            color:white;
+            position: absolute;
+            animation-name: d2;
+            animation-duration:5s;
+            animation-delay: 1s;
+            animation-fill-mode:forwards;
+        }
+        @keyframes d2{
+            0%{
+                transform: rotate(10deg);
+            }
+            50%{
+                transform: rotate(50deg);
+            }
+            100%{
+                transform: rotate(70deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="start"></div>
+<div class="box1"><p>animation-fill-mode为both</p></div>
+<div class="box2">animation-fill-mode为forwards</div>
+</body>
+</html>

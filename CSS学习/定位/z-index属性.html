@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .F1{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color:red;
+            /*z-index: 1;*/
+        }
+        .son1{
+            width: 100px;
+            height: 100px;
+            background-color:indianred;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .F2{
+            width: 200px;
+            height: 200px;
+            background-color:yellow;
+            position: relative;
+
+        }
+        .son2{
+            width: 100px;
+            height: 100px;
+            background-color:yellowgreen;
+            position: absolute;
+            top: 50px;
+            left: 250px;
+        }
+    </style>
+</head>
+<body>
+<div class="F1">
+    <div class="son1"></div>
+</div>
+<div class="F2">
+    <div class="son2">
+    </div>
+</div>
+</body>
+</html>

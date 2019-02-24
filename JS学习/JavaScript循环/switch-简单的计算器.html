@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a, b, f, s;
+    a = +(window.prompt('请输入第一个要运算的数字'));
+    b = +(window.prompt('请输入第二个要运算的数字'));
+    f = (window.prompt('请输入你想要进行的运算：+、-、*、/'));
+    switch (f) {
+        case '+':
+            s = a + b;
+            break;
+        case '-':
+            s = a - b;
+            break;
+        case '*':
+            s = a * b;
+            break;
+        case '/':
+            s = a / b;
+            break;
+        default:
+            alert('不支持的运算');
+            break;
+    }
+    alert('计算的结果是：' + s);
+</script>
+</body>
+</html>
